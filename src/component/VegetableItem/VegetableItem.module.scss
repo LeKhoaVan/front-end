@@ -1,0 +1,19 @@
+.vegetable-result {
+    display: flex;
+    text-align: center;
+    padding: 6px 16px;
+    background: white;
+    cursor: pointer;
+    color: black;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    &:hover{
+        background: rgba(31, 30, 30, 0.07);
+    }
+}
+
+.vegetable-name {
+    font-size: 1.6rem;
+}
