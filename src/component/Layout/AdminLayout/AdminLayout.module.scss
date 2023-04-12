@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.container{
+    top:60px;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.content{
+    width: 990px;
+    min-height: 1000px;
+    margin-left: 260px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 197, 197);
+    background: rgb(255, 255, 255);
+}

@@ -48,7 +48,8 @@
     }
 
     input:not(:placeholder-shown) ~ .btn-find {
-        color: rgba(22, 24 ,35, 0.75);
+        color: rgba(34, 37, 236, 0.75);
+        background: #dbfdda;
     }
     
     &::after{

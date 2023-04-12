@@ -31,6 +31,39 @@ const sibarSales = [
 
 
 
+const sibarAdmin = [
+    {
+        icon : <FontAwesomeIcon icon={faListCheck} />,
+        title : "Quản lý nông sản",
+        onclick : () => {
+            console.log("Quản lý nông sản")
+        } 
+    },
+    {
+        icon : <FontAwesomeIcon icon={faUsersGear} />,
+        title : "Quản lý tài khoản",
+        onclick : () => {
+            console.log("Quản lý tài khoản")
+        } 
+    },
+    { 
+        icon : <FontAwesomeIcon icon={faFileLines} />,
+        title : "Quản lý hóa đơn",
+        onclick : () => {
+            console.log("Quản lý hóa đơn")
+        } 
+    },
+    { 
+        icon : <FontAwesomeIcon icon={faTruck} />,
+        title : "Thông tin vận chuyển",
+        onclick : () => {
+            console.log("Thông tin vận chuyển")
+        } 
+    }
+]
+
+
+
 function Sibar() {
     return ( 
         <div className={cx('wrapper')}>
@@ -46,6 +79,16 @@ function Sibar() {
                 })}
             </div>
            
+            <div className={cx('admin')}>
+                <h2>Admin</h2>
+                {sibarAdmin.map((ad, index) => {
+                    return (
+                        <button key={index} onClick={ad.onclick}>
+                            {ad.icon} {ad.title}
+                        </button>
+                    )
+                })}
+            </div>
         </div>    
      );
 }

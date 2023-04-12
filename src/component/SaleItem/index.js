@@ -5,7 +5,7 @@ import styles from './SaleItem.module.scss';
 const cx = classNames.bind(styles);
 function SaleItem() {
     return ( 
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper')} onClick={() => console.log("San Pham")}>
             <div className={cx('img')}>
                 <img src="https://vinmec-prod.s3.amazonaws.com/images/20210106_041321_793265_hat-giong-rau-xa-la.max-1800x1800.jpg" alt="rau" />
             </div>

@@ -1,6 +1,6 @@
 .wrapper{
     width: 100%;
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .fruit-item,.vegetable-item,.carrot-item{
@@ -26,7 +26,11 @@
 
 .carrot{
     margin-top: 25px;
-    border-top: solid 1px rgb(180, 180, 180);    
+    border-top: solid 1px rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    // Thanh cuộn
+    // overflow-y: scroll;    
 }
 
 
